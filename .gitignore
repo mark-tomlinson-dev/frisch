@@ -1,0 +1,9 @@
+# System and generated files.
+.DS_Store
+
+# Directories.
+node_modules/
+build/
+
+# Env.
+.env
