@@ -3,6 +3,9 @@ const app = express()
 const path = require('path')
 const port = 3000
 
+// Styles
+app.use(express.static(path.join(__dirname, 'public')))
+// Pug
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'pug')
 

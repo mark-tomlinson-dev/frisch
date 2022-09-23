@@ -1,4 +1,3 @@
-
 const { merge } = require('webpack-merge')
 const path = require('path')
 
@@ -10,7 +9,9 @@ module.exports = merge(config, {
   devtool: 'inline-source-map',
 
   devServer: {
-    writeToDisk: true
+    devMiddleware: {
+      writeToDisk: true,
+    },
   },
 
   output: {
